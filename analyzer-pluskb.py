@@ -46,7 +46,7 @@ class KeyboardAnalyzer:
         command_str = f'{command_str} ?'
         queue.popleft()
       else:
-        command_str = '0x%02X'
+        command_str = '0x%02X' % command[0]
         queue.popleft()
       
       if command_str == last_str:
